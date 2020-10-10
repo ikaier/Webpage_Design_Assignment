@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/azh5xkn.css">
+</head>
+<body>
+
+
+    <!--header-->
+    <div class="head">
+            <p style="text-align:left;">
+                Welcome, Guest <a href="https://theuselessweb.site/ducksarethebest.com/">Lognin</a> <a href="https://theuselessweb.site/ducksarethebest.com/">Sign Up</a>
+                <span style="float:right;">
+                    Stay Updated: <a href="https://pointerpointer.com">Subscribe via RSS</a> <a href="https://pointerpointer.com">Email Updates</a>
+                </span>
+            </p>
+    </div>
+
+
+    <!--banner-->
+    <div id="banner">
+        <p>My Blog
+            <span>
+                Description of My Blog
+            </span>
+        </p>
+    </div>
+
+
+    <!--menu-->
+    <div id="menu">
+        <div id="buttons">
+            <a href="index.html">
+            <span>
+                HOME
+            </span>
+            </a>
+            <a href="index.html">
+            <span>
+                ABOUT
+            </span>
+            </a>
+            <a href="index.html">
+            <span>
+                BLOG
+            </span>
+            </a>
+            <a href="index.html">
+            <span>
+                CONTACT
+            </span>
+            </a>
+            <a id="changeColor" href="#">
+            <span>
+              COLOUR
+            </span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("changeColor").addEventListener("click",changeColor);
+            let color = "green";
+            function changeColor() {
+            if (color==="green") {
+                color="blue";
+                //if (document.getElementById("head").style.background==="#004743"){
+                //alert("test1");
+                //header
+                const head = document.getElementsByClassName("head");
+                for(var i =head.length-1;i>=0;--i){
+                    head[i].className="head_blue";
+                }
+                //document.getElementById("head").style.background = "#003459";
+                //banner
+                document.getElementById("banner").style.background = "#0077b6";
+                //menu
+                document.getElementById("menu").style.background = "#00b4d8";
+                //button
+                document.getElementById("buttons").id="buttons_blue";
+                //green in second title-link
+                const title = document.getElementsByClassName("second-title");
+                for(var i =title.length-1;i>=0;--i){
+                    title[i].className="second-title_blue";
+                }
+                //green in main text link
+                const main = document.getElementsByClassName("main-text");
+                for(var i =main.length-1;i>=0;--i){
+                    main[i].className="main-text_blue";
+                }
+                //quote
+                const quote = document.getElementsByTagName("blockquote");
+                for(var i =quote.length-1;i>=0;--i){
+                    quote[i].style.borderLeft="3px solid #003459";
+                }
+                //right-content
+                document.getElementById("content-right").style.background = "#caf0f8";
+                //foot
+                const foot = document.getElementsByClassName("foot");
+                for(var i =foot.length-1;i>=0;--i){
+                    foot[i].className="foot_blue";
+                }
+                //copyright
+                document.getElementById("copyright-block").style.color = "#00b4d8";
+                //document.getElementsByTagName("blockquote")[0].style.borderLeft="3px solid #03045e";
+            }else{
+                color="green";
+                //document.getElementById("head").style.background = "#004743";
+                document.getElementById("banner").style.background = "rgb(0,135,91)";
+                document.getElementById("menu").style.background = "rgb(128,194,142)";
+                document.getElementById("buttons_blue").id="buttons";
+                document.getElementById("content-right").style.background = "rgb(214,221,210)";
+                const temp = document.getElementsByClassName("second-title_blue");
+                for(var i =temp.length-1;i>=0;--i){
+                    temp[i].className="second-title";
+                }
+                const temp1 = document.getElementsByClassName("main-text_blue");
+                for(var i =temp1.length-1;i>=0;--i){
+                    temp1[i].className="main-text";
+                }
+                //quote
+                const temp2 = document.getElementsByTagName("blockquote");
+                for(var i =temp2.length-1;i>=0;--i){
+                    temp2[i].style.borderLeft="3px solid forestgreen";
+                }
+                const temp3 = document.getElementsByClassName("foot_blue");
+                for(var i =temp3.length-1;i>=0;--i){
+                    temp3[i].className="foot";
+                }
+                const temp4 = document.getElementsByClassName("head_blue");
+                for(var i =temp4.length-1;i>=0;--i){
+                    temp4[i].className="head";
+                }
+                //copyright
+                document.getElementById("copyright-block").style.color = "yellowgreen";
+
+            }
+        }
+    </script>
+
+
+    <!--content-->
+    <div class="content">
+
+        <!--left side-->
+        <div class="content-left">
+
+            <!--Don't Cancel Chuck!-->
+            <p class="title">
+                Don't Cancel Chuck!
+            </p>
+            <p class="second-title">
+                On July 01 in <a href="http://endless.horse"> General</a> tagged <a href="http://endless.horse">petitions</a> by <a href="http://endless.horse">admin</a>
+            </p>
+            <p class="main-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <blockquote>
+                Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+            </blockquote>
+            <p class="main-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <a href="http://endless.horse">Read More</a>
+            </p>
+
+            <!--Alien Spacecraft found in New Mexico-->
+            <p class="title">
+                Alien Spacecraft found in New Mexico
+            </p>
+            <p class="second-title">
+                On July 01 in <a href="http://endless.horse"> General</a> tagged <a href="http://endless.horse">petitions</a> by <a href="http://endless.horse">admin</a>
+            </p>
+            <p class="main-text">
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+            </p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li>Aliquam tincidunt mauris eu risus</li>
+                <li>Vestibulum auctor dapibus neque</li>
+            </ul>
+            <p class="main-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <!--Ghostly Goo in your Kitchen Sink?-->
+            <p class="title">
+                Ghostly Goo in your Kitchen Sink?
+            </p>
+            <p class="second-title">
+                On July 01 in <a href="http://endless.horse"> General</a> tagged <a href="http://endless.horse">petitions</a> by <a href="http://endless.horse">admin</a>
+            </p>
+            <p class="main-text">
+                <b>Pellentesque habitant morbi tristique </b>senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="https://quickdraw.withgoogle.com">Donec non enim </a> in turpis pulvinar facilisis. Ut felis.
+            </p>
+            <h4>Header Level 4</h4>
+            <ol>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li>Aliquam tincidunt mauris eu risus</li>
+            </ol>
+            <blockquote>
+                Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+            </blockquote>
+            <h3>Header Level 3</h3>
+            <ul id="plist1">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li>Aliquam tincidunt mauris eu risus</li>
+            </ul>
+            <ol id="plist2">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>consectetur adipiscing elit</li>
+            </ol>
+        </div>
+
+
+        <!--right side-->
+        <div id="content-right">
+            <div class="right-text">
+                <p class="title">
+                    Categories
+                </p>
+                <div class="links">
+                    <a href="https://cat-bounce.com">General</a><br>
+                    <a href="https://cat-bounce.com">Ghost Sightings</a><br>
+                    <a href="https://cat-bounce.com">UFO Crashes</a><br>
+                    <a href="https://cat-bounce.com">Government Coverups</a><br>
+                    <a href="https://cat-bounce.com">International Conspiracies</a><br>
+                </div>
+                <p class="title">
+                    Recent Posts
+                </p>
+                <div class="links">
+                    <a href="https://pointerpointer.com">Ghost Sighting in Mansion</a><br>
+                    <a href="https://pointerpointer.com">UFO picked up by satellites</a><br>
+                    <a href="https://pointerpointer.com">Mutants amoung us?</a><br>
+                    <a href="https://pointerpointer.com">Bigfoot Fact or Fiction?</a><br>
+                </div>
+                <p class="title">
+                    Archives
+                </p>
+                <div class="links">
+                    <a href="https://pointerpointer.com">June 2008</a><br>
+                    <a href="https://pointerpointer.com">May 2008</a><br>
+                    <a href="https://pointerpointer.com">April 2008</a><br>
+                    <a href="https://pointerpointer.com">March 2008</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--foot-->
+    <div class="foot">
+        <div class="flexbox">
+
+        <!--First block-->
+        <div class="link-block">
+            <p class="title">
+                Links
+            </p>
+            <p><a class="link" href="https://www.instagram.com/ikaier14/">PSDtuts - Photoshop tutorials</a></p>
+            <p><a class="link" href="https://www.instagram.com/ikaier14/">NetTtuts - Web development and design tutorials</a></p>
+            <p><a class="link" href="https://www.instagram.com/ikaier14/">VectorTuts - illustrator and vector tutorials </a></p>
+            <p><a class="link" href="https://www.instagram.com/ikaier14/">FlashTuts - Adobe Flash tutorials</a></p>
+        </div>
+
+        <!--Second block-->
+        <div class="follow-block">
+            <p class="title">
+                Follow our updates
+            </p>
+            <p><a class="link" href="https://www.instagram.com/ikaier14/">Subscribe to RSS Feed</a></p>
+            <p><a class="link" href="https://www.instagram.com/ikaier14/">What is RSS?</a></p>
+            <p><a class="link" href="https://www.instagram.com/ikaier14/">Email Updates </a></p>
+        </div>
+
+        <!--third block-->
+        <div id="copyright-block">
+            <p>Copyright © 2009.</p>
+            <p>All Rights Reserved.</p>
+        </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
