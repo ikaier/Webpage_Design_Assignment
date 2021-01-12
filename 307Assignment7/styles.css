@@ -1,0 +1,32 @@
+body{
+    width: 800px;
+    height: 100%;
+}
+
+#maincontainer{
+    max-width: 800px;
+    padding: 20% 0px;
+}
+
+#rowcontainer{
+    max-width: 800px;
+}
+
+#colcontainer{
+    max-width: 800px;
+    //height: 744px;
+}
+
+.cardimg{
+    object-fit: cover;
+    height: 100%;
+    max-width: 800px;
+}
+
+#nameerror, #emrror, #pherror,#bkerror, #oserror{
+    color: red;
+}
+
+#bkdisplay{
+    color: green;
+}
